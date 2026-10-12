@@ -42,65 +42,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Stripe API](https://stripe.com/docs/api)**  
-
-  **The gold standard for REST API design** — predictable resource-oriented URLs, form-encoded request bodies, JSON responses, idempotency keys, and comprehensive error handling. **Best for payments and financial infrastructure**.
-
-
-
-- **[Twilio REST API](https://www.twilio.com/docs/usage/api)**  
-
-  **Communications API** — SMS, voice, video, and email with consistent REST conventions, pagination, and webhooks. **Best for programmable communications**.
-
-
-
-- **[Salesforce REST API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/)**  
-
-  **Enterprise CRM API** — SOQL queries, composite requests, bulk operations, and OAuth 2.0 authentication. **Best for Salesforce integrations**.
-
-
-
-- **[Shopify REST API](https://shopify.dev/docs/api/admin-rest)**  
-
-  **E-commerce API** — products, orders, customers, inventory, and fulfillment with cursor-based pagination and rate limiting. **Best for Shopify app development**.
-
-
-
-- **[GitHub REST API](https://docs.github.com/en/rest)**  
-
-  **Developer platform API** — repositories, issues, pull requests, actions, and webhooks with extensive documentation. **Best for GitHub integrations**.
-
-
-
-- **[SendGrid API](https://docs.sendgrid.com/api-reference/)**  
-
-  **Email API** — transactional and marketing email with templates, scheduling, and analytics. **Best for email delivery**.
-
-
-
-- **[Slack Web API](https://api.slack.com/web)**  
-
-  **Messaging API** — channels, messages, users, and workflows with Web API, Events API, and Socket Mode. **Best for Slack apps**.
-
-
-
-- **[Plaid API](https://plaid.com/docs/api/)**  
-
-  **Financial data API** — bank account linking, transactions, identity verification, and balance checks. **Best for fintech applications**.
-
-
-
-- **[Algolia REST API](https://www.algolia.com/doc/rest-api/)**  
-
-  **Search API** — indexing, search, and recommendations with multi-language SDKs and real-time updates. **Best for search and discovery**.
-
-
-
-- **[Contentful REST API](https://www.contentful.com/developers/docs/references/content-delivery-api/)**  
-
-  **Content management API** — content delivery, management, and preview APIs for headless CMS. **Best for content-driven applications**.
+| Platform | Description | Starting Pricing | Free Tier / Trial Limit |
+| :--- | :--- | :--- | :--- |
+| **[Stripe API](https://stripe.com/docs/api)** | The gold standard for REST API design — predictable resource-oriented URLs, form-encoded request bodies, JSON responses, idempotency keys, and comprehensive error handling. Best for payments and financial infrastructure. | Pay-as-you-go at 2.9% + $0.30 per transaction (standard domestic card processing); $0 monthly platform fee | Free forever testing in full-featured Test/Sandbox mode with unlimited simulated API calls; $0 upfront cost |
+| **[Twilio REST API](https://www.twilio.com/docs/usage/api)** | Communications API — SMS, voice, video, and email with consistent REST conventions, pagination, and webhooks. Best for programmable communications. | Pay-as-you-go starting at $0.0083 per SMS segment (US domestic) | 30-day free trial with 100 free SMS messages (limited to 5 verified recipient phone numbers) |
+| **[Salesforce REST API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/)** | Enterprise CRM API — SOQL queries, composite requests, bulk operations, and OAuth 2.0 authentication. Best for Salesforce integrations. | Enterprise Edition starts at $175/user/month (billed annually) with API access included | Free forever Developer Edition org with 15,000 API calls per rolling 24-hour window (or 30-day standard evaluation trial) |
+| **[Shopify REST API](https://shopify.dev/docs/api/admin-rest)** | E-commerce API — products, orders, customers, inventory, and fulfillment with cursor-based pagination and rate limiting. Best for Shopify app development. | Basic Plan starts at $29/month (billed annually) or $39/month (billed monthly) | Free forever partner development stores with full Admin REST API access for app testing; 3-day merchant trial for live stores |
+| **[GitHub REST API](https://docs.github.com/en/rest)** | Developer platform API — repositories, issues, pull requests, actions, and webhooks with extensive documentation. Best for GitHub integrations. | Team plan starts at $4/user/month ($48/user/year) | Free forever plan with 5,000 authenticated requests/hour (or 60 unauthenticated requests/hour per IP) |
+| **[SendGrid API](https://docs.sendgrid.com/api-reference/)** | Email API — transactional and marketing email with templates, scheduling, and analytics. Best for email delivery. | Essentials 50K plan starts at $19.95/month for up to 50,000 emails/month | 60-day free trial with 100 emails per day |
+| **[Slack Web API](https://api.slack.com/web)** | Messaging API — channels, messages, users, and workflows with Web API, Events API, and Socket Mode. Best for Slack apps. | Pro plan starts at $7.25/user/month (billed annually) or $8.75/user/month (billed monthly) | Free forever plan with standard Tier rate limits (~1 msg/sec per channel, 30,000 event deliveries/hr/workspace) and up to 10 app integrations |
+| **[Plaid API](https://plaid.com/docs/api/)** | Financial data API — bank account linking, transactions, identity verification, and balance checks. Best for fintech applications. | Pay-as-you-go starting with product fees (e.g. Auth one-time connection fee, Balance per-request fee) with $0 monthly minimum | Free forever Sandbox environment with unlimited mock testing; Free Production Trial plan with up to 10 live connected Items |
+| **[Algolia REST API](https://www.algolia.com/doc/rest-api/)** | Search API — indexing, search, and recommendations with multi-language SDKs and real-time updates. Best for search and discovery. | Grow plan (Pay-as-you-go) at $0.50 per 1,000 additional search requests after monthly free allowance | Free forever Build plan with 10,000 search requests/month and 50,000 records |
+| **[Contentful REST API](https://www.contentful.com/developers/docs/references/content-delivery-api/)** | Content management API — content delivery, management, and preview APIs for headless CMS. Best for content-driven applications. | Lite plan starts at $300/month for up to 1,000,000 API calls/month and 100 GB CDN bandwidth | Free forever plan with 100,000 API calls/month, 50 GB CDN bandwidth, and 10,000 content records |
 
 
 
