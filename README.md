@@ -20,7 +20,7 @@ This repository tracks notable **commercial REST API platforms** and **open-sour
 
 
 
-**Open-source emphasis**: REST API tooling is one of the strongest open-source domains. **OpenAPI Specification** is the de facto standard for describing REST APIs with 30,000+ GitHub stars . **FastAPI**, **Express**, **Django REST Framework**, and **Spring Boot** dominate server frameworks. **Swagger UI**, **Redoc**, and **Scalar** deliver documentation. **OpenAPI Generator** and **Swagger Codegen** automate client/SDK generation across 50+ languages. **Postman**, **Bruno**, and **Hoppscotch** provide API clients. **Kong**, **Traefik**, and **Apache APISIX** handle gateway concerns. **JSON Schema** validates payloads. This section is heavily expanded.
+**Open-source emphasis**: REST API tooling is one of the strongest open-source domains. **OpenAPI Specification** is the de facto standard for describing REST APIs with 30,000+ GitHub_Stars . **FastAPI**, **Express**, **Django REST Framework**, and **Spring Boot** dominate server frameworks. **Swagger UI**, **Redoc**, and **Scalar** deliver documentation. **OpenAPI Generator** and **Swagger Codegen** automate client/SDK generation across 50+ languages. **Postman**, **Bruno**, and **Hoppscotch** provide API clients. **Kong**, **Traefik**, and **Apache APISIX** handle gateway concerns. **JSON Schema** validates payloads. This section is heavily expanded.
 
 
 
@@ -114,7 +114,7 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 - **[OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification)**  
 
-  **The world's most widely used API description format**, Apache-2.0 licensed with **30,000+ GitHub stars** . **Language-agnostic interface to HTTP APIs** — allows both humans and computers to discover and understand service capabilities without access to source code, documentation, or network traffic inspection . **Machine-readable format** for documentation, code generation, testing, and automation . **Best for standardizing REST API descriptions** .
+  **The world's most widely used API description format**, Apache-2.0 licensed with **30,000+ GitHub_Stars** . **Language-agnostic interface to HTTP APIs** — allows both humans and computers to discover and understand service capabilities without access to source code, documentation, or network traffic inspection . **Machine-readable format** for documentation, code generation, testing, and automation . **Best for standardizing REST API descriptions** .
 
 
 
@@ -126,7 +126,7 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 - **[API Blueprint](https://github.com/apiaryio/api-blueprint)**  
 
-  **Powerful high-level API description language**, MIT licensed with **8,700+ GitHub stars** . **Markdown-based API documentation format** . **Best for human-readable API specs** .
+  **Powerful high-level API description language**, MIT licensed with **8,700+ GitHub_Stars** . **Markdown-based API documentation format** . **Best for human-readable API specs** .
 
 
 
@@ -142,67 +142,67 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 - **[FastAPI](https://github.com/fastapi/fastapi)**  
 
-  **Modern, fast web framework for building APIs with Python**, MIT licensed with **85,000+ GitHub stars** . **Automatic OpenAPI documentation, type validation with Pydantic, async support, dependency injection, and OAuth2/JWT security** . **The fastest-growing Python API framework** . **Best for Python REST APIs** .
+  **Modern, fast web framework for building APIs with Python**, MIT licensed with **85,000+ GitHub_Stars** . **Automatic OpenAPI documentation, type validation with Pydantic, async support, dependency injection, and OAuth2/JWT security** . **The fastest-growing Python API framework** . **Best for Python REST APIs** .
 
 
 
 - **[Express](https://github.com/expressjs/express)**  
 
-  **Fast, unopinionated, minimalist web framework for Node.js**, MIT licensed with **65,000+ GitHub stars** . **The de facto standard for Node.js REST APIs** . **Best for Node.js REST APIs** .
+  **Fast, unopinionated, minimalist web framework for Node.js**, MIT licensed with **65,000+ GitHub_Stars** . **The de facto standard for Node.js REST APIs** . **Best for Node.js REST APIs** .
 
 
 
 - **[Django REST Framework](https://github.com/encode/django-rest-framework)**  
 
-  **Powerful and flexible toolkit for building Web APIs**, BSD-3-Clause licensed with **30,000+ GitHub stars** . **Serialization, authentication, permissions, pagination, and browsable API** . **Best for Django-based REST APIs** .
+  **Powerful and flexible toolkit for building Web APIs**, BSD-3-Clause licensed with **30,000+ GitHub_Stars** . **Serialization, authentication, permissions, pagination, and browsable API** . **Best for Django-based REST APIs** .
 
 
 
 - **[Spring Boot](https://github.com/spring-projects/spring-boot)**  
 
-  **Java framework for building production-ready REST APIs**, Apache-2.0 licensed with **75,000+ GitHub stars** . **Spring Web, Spring Data REST, and Spring HATEOAS** . **Best for Java REST APIs** .
+  **Java framework for building production-ready REST APIs**, Apache-2.0 licensed with **75,000+ GitHub_Stars** . **Spring Web, Spring Data REST, and Spring HATEOAS** . **Best for Java REST APIs** .
 
 
 
 - **[NestJS](https://github.com/nestjs/nest)**  
 
-  **Progressive Node.js framework for building efficient, scalable server-side applications**, MIT licensed with **70,000+ GitHub stars** . **TypeScript-first with decorators, dependency injection, and modular architecture** . **Best for TypeScript REST APIs** .
+  **Progressive Node.js framework for building efficient, scalable server-side applications**, MIT licensed with **70,000+ GitHub_Stars** . **TypeScript-first with decorators, dependency injection, and modular architecture** . **Best for TypeScript REST APIs** .
 
 
 
 - **[Fiber](https://github.com/gofiber/fiber)**  
 
-  **Express-inspired web framework for Go**, MIT licensed with **35,000+ GitHub stars** . **High performance, low memory, and familiar API** . **Best for Go REST APIs** .
+  **Express-inspired web framework for Go**, MIT licensed with **35,000+ GitHub_Stars** . **High performance, low memory, and familiar API** . **Best for Go REST APIs** .
 
 
 
 - **[Gin](https://github.com/gin-gonic/gin)**  
 
-  **HTTP web framework written in Go**, MIT licensed with **80,000+ GitHub stars** . **Fast, with middleware, routing, and JSON validation** . **Best for Go REST APIs** .
+  **HTTP web framework written in Go**, MIT licensed with **80,000+ GitHub_Stars** . **Fast, with middleware, routing, and JSON validation** . **Best for Go REST APIs** .
 
 
 
 - **[Actix Web](https://github.com/actix/actix-web)**  
 
-  **Powerful, pragmatic, and extremely fast web framework for Rust**, MIT/Apache-2.0 licensed with **22,000+ GitHub stars** . **Best for Rust REST APIs** .
+  **Powerful, pragmatic, and extremely fast web framework for Rust**, MIT/Apache-2.0 licensed with **22,000+ GitHub_Stars** . **Best for Rust REST APIs** .
 
 
 
 - **[Axum](https://github.com/tokio-rs/axum)**  
 
-  **Ergonomic and modular web framework built with Tokio, Tower, and Hyper**, MIT licensed with **20,000+ GitHub Stars** . **Best for Rust REST APIs** .
+  **Ergonomic and modular web framework built with Tokio, Tower, and Hyper**, MIT licensed with **20,000+ GitHub_Stars** . **Best for Rust REST APIs** .
 
 
 
 - **[Laravel](https://github.com/laravel/framework)**  
 
-  **PHP web framework with comprehensive API tooling**, MIT licensed with **33,000+ GitHub stars** . **Laravel Sanctum for API tokens and Passport for OAuth2** . **Best for PHP REST APIs** .
+  **PHP web framework with comprehensive API tooling**, MIT licensed with **33,000+ GitHub_Stars** . **Laravel Sanctum for API tokens and Passport for OAuth2** . **Best for PHP REST APIs** .
 
 
 
 - **[Rails API](https://github.com/rails/rails)**  
 
-  **Ruby on Rails in API-only mode**, MIT licensed with **56,000+ GitHub stars** . **Fast JSON APIs with ActiveModel::Serializers or Jbuilder** . **Best for Ruby REST APIs** .
+  **Ruby on Rails in API-only mode**, MIT licensed with **56,000+ GitHub_Stars** . **Fast JSON APIs with ActiveModel::Serializers or Jbuilder** . **Best for Ruby REST APIs** .
 
 
 
@@ -212,31 +212,31 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 - **[Swagger UI](https://github.com/swagger-api/swagger-ui)**  
 
-  **Visual documentation for OpenAPI specs**, Apache-2.0 licensed with **26,000+ GitHub stars** . **Interactive API documentation from OpenAPI specs** . **Best for OpenAPI documentation** .
+  **Visual documentation for OpenAPI specs**, Apache-2.0 licensed with **26,000+ GitHub_Stars** . **Interactive API documentation from OpenAPI specs** . **Best for OpenAPI documentation** .
 
 
 
 - **[Redoc](https://github.com/Redocly/redoc)**  
 
-  **OpenAPI-generated documentation with beautiful three-panel design**, MIT licensed with **23,000+ GitHub stars** . **Best for beautiful API reference docs** .
+  **OpenAPI-generated documentation with beautiful three-panel design**, MIT licensed with **23,000+ GitHub_Stars** . **Best for beautiful API reference docs** .
 
 
 
 - **[Scalar](https://github.com/scalar/scalar)**  
 
-  **Modern open-source API client and documentation generator**, MIT licensed with **7,000+ GitHub stars** . **Beautiful API reference from OpenAPI specs** . **Best for modern API documentation** .
+  **Modern open-source API client and documentation generator**, MIT licensed with **7,000+ GitHub_Stars** . **Beautiful API reference from OpenAPI specs** . **Best for modern API documentation** .
 
 
 
 - **[OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator)**  
 
-  **Generate clients, servers, and documentation from OpenAPI specs**, Apache-2.0 licensed with **22,000+ GitHub stars** . **50+ languages and frameworks supported** . **Best for SDK generation** .
+  **Generate clients, servers, and documentation from OpenAPI specs**, Apache-2.0 licensed with **22,000+ GitHub_Stars** . **50+ languages and frameworks supported** . **Best for SDK generation** .
 
 
 
 - **[Swagger Codegen](https://github.com/swagger-api/swagger-codegen)**  
 
-  **Generate server stubs and client SDKs from OpenAPI specs**, Apache-2.0 licensed with **17,000+ GitHub stars** . **Best for legacy code generation** .
+  **Generate server stubs and client SDKs from OpenAPI specs**, Apache-2.0 licensed with **17,000+ GitHub_Stars** . **Best for legacy code generation** .
 
 
 
@@ -264,19 +264,19 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 - **[Bruno](https://github.com/usebruno/bruno)**  
 
-  **Fast, Git-friendly, open-source API client**, MIT licensed with **30,000+ GitHub stars** . **Collections stored as plain text for version control** . **Best for offline-first API testing** .
+  **Fast, Git-friendly, open-source API client**, MIT licensed with **30,000+ GitHub_Stars** . **Collections stored as plain text for version control** . **Best for offline-first API testing** .
 
 
 
 - **[Hoppscotch](https://github.com/hoppscotch/hoppscotch)**  
 
-  **Open-source API development ecosystem**, MIT licensed with **70,000+ GitHub stars** . **Lightweight, web-based API client** . **Best for quick API testing in browser** .
+  **Open-source API development ecosystem**, MIT licensed with **70,000+ GitHub_Stars** . **Lightweight, web-based API client** . **Best for quick API testing in browser** .
 
 
 
 - **[Insomnia](https://github.com/Kong/insomnia)**  
 
-  **Open-source API client with GraphQL and REST support**, Apache-2.0 licensed with **35,000+ GitHub stars** . **Best for cross-platform API testing** .
+  **Open-source API client with GraphQL and REST support**, Apache-2.0 licensed with **35,000+ GitHub_Stars** . **Best for cross-platform API testing** .
 
 
 
@@ -288,13 +288,13 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 - **[Dredd](https://github.com/apiaryio/dredd)**  
 
-  **Language-agnostic HTTP API testing tool**, MIT licensed with **4,200+ GitHub stars** . **Tests API against API Blueprint or OpenAPI** . **Best for contract testing** .
+  **Language-agnostic HTTP API testing tool**, MIT licensed with **4,200+ GitHub_Stars** . **Tests API against API Blueprint or OpenAPI** . **Best for contract testing** .
 
 
 
 - **[Schemathesis](https://github.com/schemathesis/schemathesis)**  
 
-  **Property-based testing for OpenAPI and GraphQL APIs**, MIT licensed with **2,600+ GitHub stars** . **Automatic test generation from OpenAPI specs** . **Best for automated API testing** .
+  **Property-based testing for OpenAPI and GraphQL APIs**, MIT licensed with **2,600+ GitHub_Stars** . **Automatic test generation from OpenAPI specs** . **Best for automated API testing** .
 
 
 
@@ -304,19 +304,19 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 - **[Kong Gateway](https://github.com/Kong/kong)**  
 
-  **The most widely adopted open-source API gateway**, Apache-2.0 licensed with **40,000+ GitHub stars** . **API management, rate limiting, authentication, and plugins** . **Best for API gateway** .
+  **The most widely adopted open-source API gateway**, Apache-2.0 licensed with **40,000+ GitHub_Stars** . **API management, rate limiting, authentication, and plugins** . **Best for API gateway** .
 
 
 
 - **[Apache APISIX](https://github.com/apache/apisix)**  
 
-  **High-performance API gateway**, Apache-2.0 licensed with **15,000+ GitHub stars** . **Dynamic routing, plugins, and observability** . **Best for high-performance API gateway** .
+  **High-performance API gateway**, Apache-2.0 licensed with **15,000+ GitHub_Stars** . **Dynamic routing, plugins, and observability** . **Best for high-performance API gateway** .
 
 
 
 - **[Traefik](https://github.com/traefik/traefik)**  
 
-  **Cloud-native application proxy**, MIT licensed with **50,000+ GitHub stars** . **Automatic service discovery and Let's Encrypt** . **Best for Kubernetes ingress** .
+  **Cloud-native application proxy**, MIT licensed with **50,000+ GitHub_Stars** . **Automatic service discovery and Let's Encrypt** . **Best for Kubernetes ingress** .
 
 
 
