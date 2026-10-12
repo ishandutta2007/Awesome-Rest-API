@@ -1,43 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+<svg fill="none" viewBox="0 0 1200 340" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0a0f1d" />
-      <stop offset="50%" stop-color="#0d1b2a" />
-      <stop offset="100%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
     </linearGradient>
 
-    <!-- Glowing Accent Gradient -->
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Glowing Text & Border Gradients -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" />
       <stop offset="50%" stop-color="#818cf8" />
       <stop offset="100%" stop-color="#c084fc" />
     </linearGradient>
 
-    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="rgba(56, 189, 248, 0.15)" />
-      <stop offset="100%" stop-color="rgba(192, 132, 252, 0.15)" />
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2" />
     </linearGradient>
 
-    <!-- Card Background Gradient -->
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    <linearGradient id="pill-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.6" />
     </linearGradient>
 
-    <!-- Grid Pattern -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
-      <circle cx="40" cy="40" r="1.5" fill="rgba(56, 189, 248, 0.15)" />
-    </pattern>
-
-    <!-- Glow Filter -->
+    <!-- Filters for Glow Effects -->
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="6" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
-    <filter id="slightGlow" x="-10%" y="-10%" width="120%" height="120%">
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
@@ -48,143 +41,148 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       font-weight: 800;
       font-size: 52px;
+      fill: url(#accent-grad);
       letter-spacing: -1px;
     }
     .subtitle-text {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       font-weight: 400;
-      font-size: 19px;
+      font-size: 20px;
       fill: #94a3b8;
+      letter-spacing: 0.5px;
     }
-    .tag-text {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 600;
+    .pill-text {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       font-size: 13px;
-      fill: #e2e8f0;
-    }
-    .status-text {
-      font-family: 'SF Mono', Consolas, Monaco, monospace;
       font-weight: 600;
-      font-size: 13px;
-      fill: #38bdf8;
     }
-
-    /* Ambient pulse animations */
+    .grid-line {
+      stroke: #1e293b;
+      stroke-width: 1;
+      stroke-opacity: 0.4;
+    }
+    
+    /* Animated dynamic background circuit pulses */
     @keyframes pulseOrb {
-      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
-      50% { transform: scale(1.15) translate(20px, -10px); opacity: 0.65; }
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.25; }
+      50% { transform: scale(1.15) translate(20px, -15px); opacity: 0.45; }
     }
-    @keyframes floatParticle {
-      0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
-      50% { transform: translateY(-18px) translateX(8px); opacity: 0.7; }
+    @keyframes pulseCyan {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.2; }
+      50% { transform: scale(1.2) translate(-25px, 20px); opacity: 0.4; }
     }
-    @keyframes flowLine {
-      0% { stroke-dashoffset: 400; }
-      100% { stroke-dashoffset: 0; }
+    @keyframes dashCycle {
+      to { stroke-dashoffset: -40; }
     }
-    @keyframes pingBadge {
-      0%, 100% { opacity: 0.9; transform: scale(1); }
-      50% { opacity: 0.5; transform: scale(1.03); }
+    @keyframes floatCard {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
     }
 
-    .orb-1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: 200px 100px; }
-    .orb-2 { animation: pulseOrb 10s ease-in-out infinite reverse; transform-origin: 1000px 240px; }
-    .flow-path-1 { stroke-dasharray: 20, 10; animation: flowLine 14s linear infinite; }
-    .flow-path-2 { stroke-dasharray: 15, 12; animation: flowLine 18s linear infinite reverse; }
-    .p1 { animation: floatParticle 5s ease-in-out infinite; }
-    .p2 { animation: floatParticle 7s ease-in-out infinite 1s; }
-    .p3 { animation: floatParticle 6s ease-in-out infinite 2s; }
-    .p4 { animation: floatParticle 8s ease-in-out infinite 1.5s; }
+    .orb-purple {
+      animation: pulseOrb 8s ease-in-out infinite;
+      transform-origin: 950px 100px;
+    }
+    .orb-cyan {
+      animation: pulseCyan 10s ease-in-out infinite;
+      transform-origin: 150px 220px;
+    }
+    .flow-stream {
+      stroke-dasharray: 8, 12;
+      animation: dashCycle 2.5s linear infinite;
+    }
+    .floating-badge {
+      animation: floatCard 4s ease-in-out infinite;
+    }
   </style>
 
-  <!-- Deep Background -->
-  <rect width="1200" height="340" fill="url(#bgGrad)" rx="16" />
+  <!-- Deep Base Background -->
+  <rect width="1200" height="340" rx="16" fill="url(#bg-grad)" stroke="#1e293b" stroke-width="1.5" />
 
-  <!-- Animated Glowing Background Orbs -->
-  <g opacity="0.6">
-    <circle class="orb-1" cx="220" cy="90" r="140" fill="#38bdf8" filter="url(#glow)" opacity="0.3" />
-    <circle class="orb-2" cx="980" cy="240" r="160" fill="#a855f7" filter="url(#glow)" opacity="0.25" />
-    <circle cx="600" cy="170" r="180" fill="#4f46e5" filter="url(#glow)" opacity="0.18" />
+  <!-- Animated Ambient Glow Orbs in Background -->
+  <circle class="orb-purple" cx="980" cy="110" r="140" fill="#6366f1" opacity="0.25" filter="url(#glow)" />
+  <circle class="orb-cyan" cx="160" cy="220" r="130" fill="#06b6d4" opacity="0.2" filter="url(#glow)" />
+  <circle cx="600" cy="30" r="100" fill="#a855f7" opacity="0.15" filter="url(#glow)" />
+
+  <!-- Geometric Grid Background Pattern -->
+  <g class="grid-line">
+    <line x1="100" y1="0" x2="100" y2="340" />
+    <line x1="250" y1="0" x2="250" y2="340" />
+    <line x1="400" y1="0" x2="400" y2="340" />
+    <line x1="550" y1="0" x2="550" y2="340" />
+    <line x1="700" y1="0" x2="700" y2="340" />
+    <line x1="850" y1="0" x2="850" y2="340" />
+    <line x1="1000" y1="0" x2="1000" y2="340" />
+    <line x1="1150" y1="0" x2="1150" y2="340" />
+
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="130" x2="1200" y2="130" />
+    <line x1="0" y1="200" x2="1200" y2="200" />
+    <line x1="0" y1="270" x2="1200" y2="270" />
   </g>
 
-  <!-- Grid overlay -->
-  <rect width="1200" height="340" fill="url(#grid)" rx="16" />
-
-  <!-- Animated Data Flow Lines in Background -->
-  <g opacity="0.45">
-    <path class="flow-path-1" d="M 50,70 C 300,120 400,20 650,80 S 950,40 1150,90" fill="none" stroke="url(#accentGrad)" stroke-width="2" />
-    <path class="flow-path-2" d="M 50,270 C 250,220 500,310 750,240 S 1000,300 1150,260" fill="none" stroke="url(#accentGrad)" stroke-width="2" />
+  <!-- Dynamic Animated API Flow Curves (behind text) -->
+  <g opacity="0.7">
+    <path class="flow-stream" d="M 50 80 Q 250 30, 500 80 T 950 60 T 1150 90" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <path class="flow-stream" d="M 80 290 Q 350 330, 650 280 T 1000 310 T 1150 270" fill="none" stroke="#a855f7" stroke-width="2" />
+    <path class="flow-stream" d="M 0 170 Q 300 210, 600 170 T 1200 160" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-opacity="0.5" />
   </g>
 
-  <!-- Floating Particles in Background -->
-  <circle class="p1" cx="160" cy="190" r="3" fill="#38bdf8" />
-  <circle class="p2" cx="380" cy="60" r="2.5" fill="#818cf8" />
-  <circle class="p3" cx="840" cy="80" r="3" fill="#c084fc" />
-  <circle class="p4" cx="1060" cy="180" r="3.5" fill="#38bdf8" />
+  <!-- Floating Feature Pills / Cards (placed safely away from title) -->
+  <g class="floating-badge">
+    <!-- GET /200 OK Pill -->
+    <rect x="70" y="38" width="130" height="34" rx="17" fill="url(#pill-grad)" stroke="#10b981" stroke-width="1" stroke-opacity="0.6" />
+    <circle cx="88" cy="55" r="5" fill="#10b981" />
+    <text x="102" y="59" fill="#34d399" class="pill-text">GET 200 OK</text>
 
-  <!-- Interactive Terminal / HTTP Card (Right Side Decorative) -->
-  <g transform="translate(860, 65)">
-    <rect width="280" height="195" rx="12" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5" />
-    
-    <!-- Window controls -->
-    <circle cx="22" cy="22" r="5" fill="#ef4444" />
-    <circle cx="38" cy="22" r="5" fill="#eab308" />
-    <circle cx="54" cy="22" r="5" fill="#22c55e" />
-    <line x1="1" y1="40" x2="279" y2="40" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
-    
-    <!-- HTTP request pills -->
-    <rect x="18" y="56" width="52" height="20" rx="4" fill="#0284c7" />
-    <text x="44" y="70" font-family="monospace" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">GET</text>
-    <text x="78" y="71" font-family="monospace" font-size="12" fill="#94a3b8">/api/v1/resources</text>
-
-    <rect x="18" y="88" width="52" height="20" rx="4" fill="#16a34a" />
-    <text x="44" y="102" font-family="monospace" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">POST</text>
-    <text x="78" y="103" font-family="monospace" font-size="12" fill="#94a3b8">/api/v1/webhooks</text>
-
-    <!-- Response Preview -->
-    <rect x="18" y="122" width="244" height="54" rx="6" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(56, 189, 248, 0.2)" stroke-width="1" />
-    <text x="28" y="142" font-family="monospace" font-size="11" fill="#38bdf8">HTTP/2 200 OK</text>
-    <text x="28" y="160" font-family="monospace" font-size="11" fill="#64748b">{"status": "ready", "rate": "∞"}</text>
+    <!-- POST /api/v1 Pill -->
+    <rect x="1000" y="40" width="130" height="34" rx="17" fill="url(#pill-grad)" stroke="#6366f1" stroke-width="1" stroke-opacity="0.6" />
+    <circle cx="1018" cy="57" r="5" fill="#818cf8" />
+    <text x="1032" y="61" fill="#a5b4fc" class="pill-text">REST / API</text>
   </g>
 
-  <!-- Foreground Title and Content -->
-  <!-- Top Badge / Pill -->
-  <g transform="translate(80, 52)">
-    <rect width="270" height="30" rx="15" fill="url(#badgeGrad)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1" />
-    <circle cx="16" cy="15" r="4.5" fill="#38bdf8" filter="url(#slightGlow)" />
-    <text x="32" y="20" class="tag-text" fill="#38bdf8">⚡ CURATED ECOSYSTEM GUIDE</text>
+  <!-- MAIN FOREGROUND TITLE & SUBTITLE (Never blocked) -->
+  <g text-anchor="middle">
+    <!-- Category Badge Top -->
+    <rect x="495" y="46" width="210" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5" />
+    <text x="600" y="65" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">⚡ ECOSYSTEM ARCHIVE</text>
+
+    <!-- Main Title -->
+    <text x="600" y="142" class="title-text" filter="url(#soft-glow)">Awesome REST API</text>
+
+    <!-- Subtitle -->
+    <text x="600" y="185" class="subtitle-text">Curated Architectures, Enterprise SaaS Platforms &amp; Open-Source Frameworks</text>
+
+    <!-- Badges / Tags row below title -->
+    <g transform="translate(0, 222)">
+      <!-- OpenAPI Pill -->
+      <g transform="translate(240, 0)">
+        <rect x="0" y="0" width="135" height="34" rx="17" fill="url(#pill-grad)" stroke="#64748b" stroke-width="1" />
+        <text x="67" y="22" fill="#e2e8f0" class="pill-text" text-anchor="middle">⚡ OpenAPI 3.1</text>
+      </g>
+      <!-- API Gateways Pill -->
+      <g transform="translate(390, 0)">
+        <rect x="0" y="0" width="135" height="34" rx="17" fill="url(#pill-grad)" stroke="#64748b" stroke-width="1" />
+        <text x="67" y="22" fill="#e2e8f0" class="pill-text" text-anchor="middle">🛡️ Gateways</text>
+      </g>
+      <!-- Frameworks Pill -->
+      <g transform="translate(540, 0)">
+        <rect x="0" y="0" width="135" height="34" rx="17" fill="url(#pill-grad)" stroke="#64748b" stroke-width="1" />
+        <text x="67" y="22" fill="#e2e8f0" class="pill-text" text-anchor="middle">🚀 Frameworks</text>
+      </g>
+      <!-- Testing & Docs Pill -->
+      <g transform="translate(690, 0)">
+        <rect x="0" y="0" width="135" height="34" rx="17" fill="url(#pill-grad)" stroke="#64748b" stroke-width="1" />
+        <text x="67" y="22" fill="#e2e8f0" class="pill-text" text-anchor="middle">📖 Documentation</text>
+      </g>
+      <!-- SDK Codegen Pill -->
+      <g transform="translate(840, 0)">
+        <rect x="0" y="0" width="125" height="34" rx="17" fill="url(#pill-grad)" stroke="#64748b" stroke-width="1" />
+        <text x="62" y="22" fill="#e2e8f0" class="pill-text" text-anchor="middle">⚙️ Codegen</text>
+      </g>
+    </g>
+
+    <!-- Bottom Status / Protocol Footer Line -->
+    <text x="600" y="300" font-family="ui-monospace, monospace" font-size="12" fill="#64748b" letter-spacing="1">HTTP/1.1 · HTTP/2 · HTTP/3 · JSON · OAUTH 2.0 · HATEOAS</text>
   </g>
-
-  <!-- Main Headline -->
-  <g transform="translate(80, 136)">
-    <text class="title-text" fill="url(#accentGrad)" filter="url(#slightGlow)">Awesome REST API</text>
-  </g>
-
-  <!-- Subtitle -->
-  <g transform="translate(80, 178)">
-    <text class="subtitle-text">The definitive catalog of enterprise REST APIs, OpenAPI specs,</text>
-    <text y="28" class="subtitle-text">gateways, frameworks, SDK tooling &amp; HTTP design standards.</text>
-  </g>
-
-  <!-- Feature Pills / Highlights -->
-  <g transform="translate(80, 252)">
-    <!-- Pill 1 -->
-    <rect x="0" y="0" width="130" height="34" rx="8" fill="rgba(30, 41, 59, 0.7)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
-    <text x="16" y="21" class="tag-text">🌐 SaaS APIs</text>
-
-    <!-- Pill 2 -->
-    <rect x="142" y="0" width="150" height="34" rx="8" fill="rgba(30, 41, 59, 0.7)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
-    <text x="156" y="21" class="tag-text">🛠️ Gateways</text>
-
-    <!-- Pill 3 -->
-    <rect x="304" y="0" width="140" height="34" rx="8" fill="rgba(30, 41, 59, 0.7)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
-    <text x="318" y="21" class="tag-text">📖 OpenAPI 3.1</text>
-
-    <!-- Pill 4 -->
-    <rect x="456" y="0" width="150" height="34" rx="8" fill="rgba(30, 41, 59, 0.7)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
-    <text x="470" y="21" class="tag-text">🚀 Frameworks</text>
-  </g>
-
-  <!-- Border Outline -->
-  <rect width="1198" height="338" x="1" y="1" rx="15" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.5" />
 </svg>
